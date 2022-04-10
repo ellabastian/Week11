@@ -1,13 +1,19 @@
+<header>
+    <a href="{{page_title2}}">{{page_title2}} Page</a>
+    <a href="{{page_title3}}">{{page_title3}} Page</a>
+    <a href="{{page_title4}}">{{page_title4}} Page</a>
+</header>
+
+<div class="HeroMainText">{{title}} Page</div>
 {% extends "layout.html" %}
 {%block body_content %}
 
-<a href="{{page_title2}}">{{page_title2}} Page</a>
-<a href="{{page_title3}}">{{page_title3}} Page</a>
-
 <p>This page is all about the cast and support team</p>
 
+<p>This is a list of the main cast:</p>
+
 <ul>
-    This is a list of the main cast:
+<!--    <br>&nbsp;-->
     <li>Geralt - Henry Cavill</li>
     <li>Yennefer - Anya Chalotra</li>
     <li>Ciri - Freya Allan</li>
@@ -20,10 +26,10 @@
     <li>Vesemir - Kim Bodnia</li>
 </ul>
 
+<p>A list of directors is:</p>
 <ul>
-    A list of directors is:
-    {% for person in directors %}
-    <li>{{ person }}</li>
+    {% for item in person %}
+    <li>{{ item }}</li>
     {% endfor %}
 </ul>
 

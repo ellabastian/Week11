@@ -1,0 +1,29 @@
+<header>
+    <a href="{{page_title}}">{{page_title}} Page</a>
+    <a href="{{page_title2}}">{{page_title2}} Page</a>
+    <a href="{{page_title3}}">{{page_title3}} Page</a>
+</header>
+
+<div class="HeroMainText">{{title}} Page</div>
+
+{% extends "layout.html" %}
+{% block body_content %}
+
+<div class = "form>">
+     <form method = "POST" action = "">
+         {{form.hidden_tag()}}
+         {{form.first_name.label}}{{form.first_name}}
+         <br>
+         {{form.email.label}}{{form.email}}
+         <br>
+         {{form.date_of_birth.label}}{{form.date_of_birth}}
+         <br>
+         {{form.favourite_character.label}}{{form.favourite_character}}
+
+         <br>
+         {{form.submit}}
+         {{message}}
+     </form>
+</div>
+
+{% endblock%}

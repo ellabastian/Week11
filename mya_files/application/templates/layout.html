@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"
-    <title>{{title}}</title>
+    <title>The Witcher</title>
 </head>
 <body>
     <h1><u>{{title}} Page</u></h1>
     <hr>
     <a href="{{url}}">{{url_name}} Page &nbsp;</a>
     <a href="{{url2}}">{{url_name2}} Page &nbsp;</a>
+    <a href="{{url3}}">{{url_name3}} Page &nbsp;</a>
+    <hr>
     <p></p>
 {% block body_content %} {%endblock %}
 </body>

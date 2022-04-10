@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{%block body_content %}
+
+<a href="{{page_title2}}">{{page_title2}} Page</a>
+<a href="{{page_title3}}">{{page_title3}} Page</a>
+
+<p>This page is all about the cast and support team</p>
+
+<ul>
+    This is a list of the main cast:
+    <li>Geralt - Henry Cavill</li>
+    <li>Yennefer - Anya Chalotra</li>
+    <li>Ciri - Freya Allan</li>
+    <li>Dandelion aka The Bard - Joey Batey</li>
+    <li>Fringilla Vigo - Mimi Ndiweni</li>
+    <li>Triss - Anna Shaffer</li>
+    <li>Tissai - MyAnna Buring</li>
+    <li>Cahir - Eamon Farren</li>
+    <li>Istredd - Royce Pierreson</li>
+    <li>Vesemir - Kim Bodnia</li>
+</ul>
+
+<ul>
+    A list of directors is:
+    {% for person in directors %}
+    <li>{{ person }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
+

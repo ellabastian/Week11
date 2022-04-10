@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" href="{{url_for('static', filename='styles.css')}}"/>
+    <title>{{title}} Page</title>
+</head>
+<body>
+<!--    <h1><u> {{title}} Page</u></h1>-->
+    {% block body_content%}{% endblock %}
+</body>
+    <hr>
+    <footer> &copy; Mya and Ella 2022 </footer>
+</html>
